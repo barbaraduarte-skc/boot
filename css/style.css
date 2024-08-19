@@ -1,0 +1,202 @@
+@import url("https://use.typekit.net/wwf6sdi.css");
+
+/*! ---- RESET ----*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "commuters-sans";
+}
+
+/*! ----- HEADER -----*/
+
+header nav div a img {
+    width: 64px;
+}
+
+.menu-color {
+    background-color: #0e1429;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #1ba7a6 !important
+}
+
+/*! ----- MAIN -----*/
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, minmax(400px, auto));
+    /* Altura flexible */
+    ;
+    align-items: center;
+    grid-template-areas:
+        "hero hero hero"
+        "metodologia metodologia metodologia"
+        "valores valores valores"
+        "suscripcion suscripcion suscripcion"
+    ;
+}
+
+.hero {
+    background-color: #0e1429;
+    text-align: center;
+    color: #ffffff;
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    /* El primer div ocupará 2 partes, y el segundo 1 parte */
+    align-items: center;
+    /* Centra verticalmente ambos bloques */
+    padding-left: 150px;
+    padding-right: 150px;
+    min-height: 400px;
+    /* Asegura que la sección tenga una altura mínima */
+}
+
+.hero-text {
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    margin-left: 30px;
+}
+
+.hero-image {
+    text-align: right;
+    /* Alinea la imagen a la derecha */
+}
+
+.hero img {
+    width: 400px;
+    /* Asegura que la imagen no se desborde */
+    height: auto;
+}
+
+.hero h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.hero a {
+    background-color: #1ba7a6;
+    text-decoration: none;
+    color: #0e1429;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.recursos {
+    color: #1ba7a6;
+    font-size: 12px;
+}
+
+.metodologia {
+    grid-area: metodologia;
+}
+
+.metodologia h2 {
+    text-align: center;
+}
+
+.grid-met {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.grid-met div img {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.valores {
+    grid-area: valores;
+    background-color: #1ba7a6;
+    display: flex;
+    /* Establece el contenedor como un contenedor flexible */
+    flex-direction: column;
+    /* Alinea los elementos en una columna */
+    align-items: center;
+    /* Centra horizontalmente los elementos */
+    justify-content: center;
+    /* Centra verticalmente los elementos */
+    min-height: 400px;
+    /* Asegura una altura mínima */
+}
+
+.valores h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.valores h3 {
+    color: #0e1429;
+}
+
+.valores p {
+    font-size: 14px;
+    padding: 8px;
+}
+
+.grid-valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    text-align: center;
+    justify-items: center;
+}
+
+.grid-valores div img {
+    width: 50px;
+}
+
+.suscripcion {
+    grid-area: suscripcion;
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye los elementos a ambos lados */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    padding-left: 150px;
+    margin-right: 150px;
+}
+
+.suscripcion h2 {
+    color: #1ba7a6;
+    text-align: left;
+}
+
+.suscripcion h3 {
+    color: #0e1429;
+}
+
+
+    .consultas img {
+        width: 30px;
+    }
+
+
+    /*! --- FOOTER ----*/
+    footer div a img {
+        width: 30px;
+    }
+
+    /*? ----- INDEX -----*/
