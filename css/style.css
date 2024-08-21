@@ -24,8 +24,12 @@ header nav div a img {
     color: #ffffff !important;
 }
 
-.navbar-toggler-icon {
-    background-color: #1ba7a6 !important
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+header nav div span {
+    color: #ffffff;
 }
 
 /*! ----- MAIN -----*/
@@ -34,7 +38,6 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, minmax(400px, auto));
     /* Altura flexible */
-    ;
     align-items: center;
     grid-template-areas:
         "hero hero hero"
@@ -46,18 +49,36 @@ main {
 
 .hero {
     background-color: #0e1429;
-    text-align: center;
     color: #ffffff;
     grid-area: hero;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    /* El primer div ocupará 2 partes, y el segundo 1 parte */
-    align-items: center;
-    /* Centra verticalmente ambos bloques */
-    padding-left: 150px;
-    padding-right: 150px;
     min-height: 400px;
-    /* Asegura que la sección tenga una altura mínima */
+    display: flex;
+    justify-content: center;;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-image {
+    max-width: 550px;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    /* A partir de pantallas md y menores (es decir, hasta 991.98px), se oculta la imagen */
+    .content-image {
+        display: none;
+    }
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-text {
@@ -66,20 +87,8 @@ main {
     margin-left: 30px;
 }
 
-.hero-image {
-    text-align: right;
-    /* Alinea la imagen a la derecha */
-}
-
-.hero img {
-    width: 400px;
-    /* Asegura que la imagen no se desborde */
-    height: auto;
-}
-
 .hero h2 {
     text-align: left;
-    margin-bottom: 15px;
 }
 
 .hero p {
@@ -138,6 +147,8 @@ main {
     /* Centra verticalmente los elementos */
     min-height: 400px;
     /* Asegura una altura mínima */
+   padding-left: 60px;
+   padding-right: 60px;
 }
 
 .valores h2 {
@@ -153,50 +164,156 @@ main {
 
 .valores p {
     font-size: 14px;
-    padding: 8px;
 }
 
-.grid-valores {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    text-align: center;
-    justify-items: center;
-}
-
-.grid-valores div img {
+.valores div img {
     width: 50px;
 }
 
 .suscripcion {
     grid-area: suscripcion;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* Distribuye los elementos a ambos lados */
     align-items: center;
     /* Centra verticalmente los elementos */
-    padding-left: 150px;
-    margin-right: 150px;
 }
 
 .suscripcion h2 {
+    font-size: 38px;
+    font-weight: 700;
     color: #1ba7a6;
     text-align: left;
 }
 
 .suscripcion h3 {
     color: #0e1429;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 
-    .consultas img {
-        width: 30px;
+/*! --- FOOTER ----*/
+footer {
+    background-color: #0e1429;
+    width: 100%;
+    height: 200px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li a {
+    margin-inline: 20px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer-img {
+    height: 30px;
+}
+
+footer i {
+    font-size: 25px;
+    color: #ffffff;;
+}
+
+.decorative-line {
+    width: 400px;
+    height: 1px; /* Altura de la línea */
+    background-color: #ffffff; /* Color de la línea */
+    margin: 10px 0; /* Espaciado opcional */
+}
+
+.iconos-redes {
+    margin-inline: 40px;
+}
+
+/*? ----- CONTACTO -----*/
+.contacto-items {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.contacto-items h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0e1429;
+}
+
+.contacto-items p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.contacto-items button {
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color:#1ba7a6 !important;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    --bs-btn-border-color:none !important
+}
+
+@media (min-width: 768px) {
+    .contacto-items {
+        flex-direction: row;
+        gap: 3rem;
+        text-align: left;
     }
 
-
-    /*! --- FOOTER ----*/
-    footer div a img {
-        width: 30px;
+    form {
+        width: 80%;
     }
-
-    /*? ----- INDEX -----*/
+}
