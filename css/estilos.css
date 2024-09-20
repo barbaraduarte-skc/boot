@@ -1,0 +1,305 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/wwf6sdi.css");
+/*! ---- RESET ----*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "commuters-sans";
+}
+
+/*! ----- HEADER -----*/
+header nav div a img {
+  width: 64px;
+}
+header nav div span {
+  color: #0e1429;
+}
+header .menu-color {
+  background-color: #0e1429;
+}
+header .nav-link {
+  color: #ffffff !important;
+}
+header .nav-link:hover {
+  color: #1ba7a6 !important;
+}
+header .navbar-toggler {
+  border-color: #ffffff;
+}
+
+.index-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, minmax(400px, auto));
+  /* Altura flexible */
+  align-items: center;
+  grid-template-areas: "hero hero hero" "metodologia metodologia metodologia" "valores valores valores" "suscripcion suscripcion suscripcion";
+}
+.index-main .hero {
+  background-color: #0e1429;
+  color: #ffffff;
+  grid-area: hero;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  padding-left: 60px;
+  padding-right: 20px;
+}
+.index-main .hero .row {
+  align-items: first baseline;
+  justify-content: space-evenly;
+}
+.index-main .hero .row div h2 {
+  text-align: left;
+  color: #1ba7a6;
+  font-weight: 600;
+}
+.index-main .hero .row div h2 span {
+  animation: transformation 1s;
+}
+@keyframes transformation {
+  0% {
+    font-size: 0%;
+  }
+  50% {
+    font-size: 150%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+.index-main .hero .row div p {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.index-main .hero .row div a {
+  background-color: #1ba7a6;
+  text-decoration: none;
+  color: #0e1429;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.index-main .hero .row div a:hover {
+  background-color: #ffff00;
+}
+.index-main .hero .row div .recursos {
+  color: #1ba7a6;
+  font-size: 12px;
+}
+.index-main .hero .row div div img {
+  max-width: 500px;
+}
+.index-main .metodologia {
+  grid-area: metodologia;
+}
+.index-main .metodologia h2 {
+  text-align: center;
+  color: #0e1429;
+  font-weight: 800;
+}
+.index-main .metodologia .grid-met {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.index-main .metodologia .grid-met div img {
+  width: 333.33px;
+  margin: 10px;
+}
+.index-main .valores {
+  grid-area: valores;
+  background-color: #1ba7a6;
+  display: flex;
+  /* Establece el contenedor como un contenedor flexible */
+  flex-direction: column;
+  /* Organiza los elementos en el eje que estamos trabajando */
+  justify-content: center;
+  min-height: 400px;
+}
+.index-main .valores h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+  font-weight: 800;
+}
+.index-main .valores div {
+  text-align: center;
+  padding: 20px;
+}
+.index-main .valores div div img {
+  width: 50px;
+}
+.index-main .valores div div h3 {
+  color: #0e1429;
+  width: 100%;
+}
+.index-main .valores div div p {
+  font-size: 14px;
+  width: 100%;
+}
+.index-main .suscripcion {
+  grid-area: suscripcion;
+  min-width: 400px;
+}
+.index-main .suscripcion .susc-elementos {
+  justify-content: space-evenly;
+}
+.index-main .suscripcion .susc-elementos .quiero {
+  width: 400px;
+}
+.index-main .suscripcion .susc-elementos .quiero h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1ba7a6;
+  text-align: left;
+}
+.index-main .suscripcion .susc-elementos .quiero h3 {
+  color: #0e1429;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.contacto-items {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #ffffff;
+}
+.contacto-items div h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0e1429;
+}
+.contacto-items div p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.contacto-items div button {
+  margin-bottom: 2rem;
+}
+.contacto-items div h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0e1429;
+}
+.contacto-items div form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contacto-items div form div {
+  margin-bottom: 1.5rem;
+}
+.contacto-items div form div label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.contacto-items div form div input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.contacto-items div .form-floating textarea {
+  height: 100px;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.contacto-items div .form-group div button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1ba7a6 !important;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  --bs-btn-border-color:none !important ;
+}
+
+footer {
+  background-color: #0e1429;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer div ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer div ul li a {
+  margin-inline: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+footer div ul li img {
+  height: 30px;
+}
+footer .decorative-line {
+  width: 400px;
+  height: 1px; /* Altura de la línea */
+  background-color: #ffffff; /* Color de la línea */
+  margin: 10px 0; /* Espaciado opcional */
+}
+footer div i {
+  font-size: 25px;
+  color: #ffffff;
+  margin-inline: 40px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  /* A partir de pantallas md y menores (es decir, hasta 991.98px), se oculta la imagen */
+  .content-image {
+    display: none;
+  }
+}
+footer ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/*! --- FOOTER ----*/
+.decorative-line {
+  width: 100px; /* Reducir el ancho de la línea en dispositivos pequeños */
+}
+
+/*! --- CONTACTO ----*/
+@media (min-width: 768px) {
+  .contacto-items {
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+  }
+  form {
+    width: 80%;
+  }
+}/*# sourceMappingURL=estilos.css.map */

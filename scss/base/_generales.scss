@@ -1,0 +1,44 @@
+@import url("https://use.typekit.net/wwf6sdi.css");
+
+/*! ---- RESET ----*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "commuters-sans";
+}
+
+
+/*! ----- HEADER -----*/
+
+header {
+    nav {
+        div {
+            a {
+                img {
+                    width: 64px; // Ancho del logo dentro del navbar
+                }
+            }
+
+            span {
+                color: $color-primary; // Utilizando la variable para el color del ícono del toggler
+            }
+        }
+    }
+
+    .menu-color {
+        background-color: $color-primary; // Utilizando la variable para el color de fondo
+    }
+
+    .nav-link {
+        color: $color-tertiary !important;
+        &:hover {color: $color-secondary !important}// Utilizando el blanco como color terciario para los enlaces
+    }
+
+    .navbar-toggler {
+        border-color: $color-tertiary; // Color del borde del toggler
+    }
+}

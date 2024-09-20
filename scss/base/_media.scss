@@ -1,0 +1,40 @@
+@media (min-width: 768px) {
+    .hero {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    /* A partir de pantallas md y menores (es decir, hasta 991.98px), se oculta la imagen */
+    .content-image {
+        display: none;
+    }
+}
+
+
+footer ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/*! --- FOOTER ----*/
+
+.decorative-line {
+    width: 100px; /* Reducir el ancho de la línea en dispositivos pequeños */
+}
+
+/*! --- CONTACTO ----*/
+@media (min-width: 768px) {
+    .contacto-items {
+        flex-direction: row;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    form {
+        width: 80%;
+    }
+}
