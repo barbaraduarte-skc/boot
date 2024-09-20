@@ -7,72 +7,111 @@
     <!-- BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ANIMACIONES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <title>SKILL esCOOL | Planificación y Gestión Personal</title>
-    <link rel="shortcut icon" href="../img/Asset 1.png">
+    <link rel="shortcut icon" href="../img/favicon.ico">
     <!-- FALTA COLOCAR ACA EL LOGO DE SKC -->
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<!-- cabeza -->
-<header>
-    <!-- barra de navegacion -->
-    <nav class="navbar navbar-expand-lg menu-color">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../img/logo-nav2.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="bi bi-list"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./elcurso.html">Curso</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./coach.html">La Profe</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./gratis.html">Gratis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- cabeza -->
+    <header>
+        <!-- barra de navegacion -->
+        <nav class="navbar navbar-expand-lg menu-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/logo-nav2.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi bi-list"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./elcurso.html">Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./coach.html">La Profe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gratis.html">Gratis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <main class="social-links">
+        <h1 class="titulo">Contenido gratis en: <span class="animate__animated animate__bounce">Caburei Podcast</span>
+        </h1>
+        <section class="escucha">
+            <div data-aos="zoom-out-right">
+                <h2 class="spotify">Spotify</h2>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/show/0v8ni0pKYAuvAZ27xwJh4N?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+            <div data-aos="zoom-out-left">
+                <h2 class="apple">Apple Podcast</h2>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0"
+                    height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                    src="https://embed.podcasts.apple.com/py/podcast/caburei-podcast/id1759852437"></iframe>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="yt">
+                <!-- YouTube -->
+                <h2 class="yutu">Mirá nuestro contenido en YouTube</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kjZkqyyvt-I?si=U67PuE5iu2EIRprv"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="flex-container">
+        <div>
+            <ul>
+                <li><a href="">AVISO LEGAL</a></li>
+                <li><a href="">CONCIDIONES DE CONTRATACIÓN</a></li>
+                <li><img class="footer-img" src="../img/logo-nav2.png" alt="logo skill escool"></li>
+                <li><a href="">POLÍTICAS DE PRIVACIDAD</a></li>
+                <li><a href="">POLÍTICAS DE COOKIES</a></li>
+            </ul>
         </div>
-    </nav>
-</header>
-
-<footer class="flex-container">
-    <div>
-        <ul>
-            <li><a href="">AVISO LEGAL</a></li>
-            <li><a href="">CONCIDIONES DE CONTRATACIÓN</a></li>
-            <li><img class="footer-img" src="../img/logo-nav2.png" alt="logo skill escool"></li>
-            <li><a href="">POLÍTICAS DE PRIVACIDAD</a></li>
-            <li><a href="">POLÍTICAS DE COOKIES</a></li>
-        </ul>
-    </div>
-    <div class="decorative-line"></div>
-    <div>
-        <i class="bi bi-instagram px-3"></i>
-        <i class="bi bi-tiktok px-3"></i>
-        <i class="bi bi-youtube px-3 c"></i>
-        <i class="bi bi-spotify px-3"></i>
-        <i class="bi bi-whatsapp px-3"></i>
-    </div>
-</footer>
-
+        <div class="decorative-line"></div>
+        <div>
+            <i class="bi bi-instagram px-3"></i>
+            <i class="bi bi-tiktok px-3"></i>
+            <i class="bi bi-youtube px-3 c"></i>
+            <i class="bi bi-spotify px-3"></i>
+            <i class="bi bi-whatsapp px-3"></i>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

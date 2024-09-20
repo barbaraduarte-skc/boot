@@ -1,0 +1,36 @@
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+text-align: center;
+font-weight: 800;
+font-size: 26px;
+color: $color-secondary;
+;
+margin: 20px;
+}
+
+.escucha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.spotify, .apple, .yutu {
+    font-weight: 600;
+    color: $color-primary;
+    text-decoration: underline;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+}
+
+.yt {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
