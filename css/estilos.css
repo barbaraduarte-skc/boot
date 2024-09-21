@@ -267,6 +267,90 @@ header .navbar-toggler {
   align-items: center;
 }
 
+.laprofe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  border-bottom: 4px solid #0e1429;
+}
+
+.foto-barb {
+  height: 100%;
+  max-width: 400px;
+  margin-left: 40px;
+}
+
+.presentacion {
+  margin: 15px;
+  padding-right: 100px;
+  max-width: 800px;
+}
+
+.hola-bienve {
+  padding: 15px;
+}
+
+.hola {
+  color: #1ba7a6;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.trayectoria {
+  background-color: #0e1429;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.title-trayectoria {
+  color: #1ba7a6;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.soy {
+  color: #ffffff;
+}
+
+p {
+  font-weight: 500;
+}
+
+.soy-barb {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.explicacion {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+.que-encontrar {
+  background-color: #1ba7a6;
+  border-radius: 10px;
+  padding: 45px;
+  max-width: 500px;
+}
+
+.dirigido {
+  background-color: rgba(255, 255, 0, 0.775);
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 500px;
+  align-items: center;
+}
+
+h4 {
+  font-weight: 700;
+  color: #0e1429;
+}
+
 footer {
   background-color: #0e1429;
   width: 100%;
