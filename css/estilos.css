@@ -240,6 +240,14 @@ header .navbar-toggler {
   --bs-btn-border-color:none !important ;
 }
 
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .curso-presentacion {
   display: flex;
   flex-direction: column;
@@ -251,6 +259,8 @@ header .navbar-toggler {
   background-size: cover;
   background-position: bottom center;
   border-bottom: 4px solid #0e1429;
+  opacity: 0;
+  animation: fadeInBackground 1s ease-in-out forwards;
 }
 
 .caos {
@@ -547,6 +557,65 @@ footer div i {
 }
 
 /*! --- EL CURSO ----*/
+@media (max-width: 767px) {
+  .curso-presentacion {
+    padding: 1rem;
+    background-image: none;
+  }
+  .curso-presentacion .caos {
+    visibility: visible;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .curso-presentacion .primer-curso {
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+  }
+  .curso-presentacion .solo {
+    padding: 5px;
+    margin: 0;
+  }
+  .curso-presentacion .quiero-empren {
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .curso-presentacion .quiero-empren:hover {
+    background-color: #0e1429;
+  }
+  .frase {
+    padding: 2rem;
+  }
+  .frase .tu-hora {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .curso-presentacion {
+    padding: 1.5rem;
+  }
+  .curso-presentacion .caos {
+    font-size: 32px;
+    padding-top: 80px;
+  }
+  .curso-presentacion .primer-curso {
+    font-size: 20px;
+  }
+  .curso-presentacion .quiero-empren {
+    font-size: 15px;
+  }
+  .curso-presentacion .quiero-empren:hover {
+    background-color: #0e1429;
+  }
+  .frase {
+    padding: 1.5rem;
+  }
+  .frase .tu-hora {
+    font-size: 32px;
+  }
+}
 /*! --- LA PROFE ----*/
 /*! --- GRATIS ----*/
 /*! --- FOOTER ----*/

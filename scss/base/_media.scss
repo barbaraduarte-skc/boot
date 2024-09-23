@@ -66,8 +66,79 @@
     }
 }
 
-
 /*! --- EL CURSO ----*/
+// Media queries para pantallas pequeñas
+@media (max-width: 767px) {
+    .curso-presentacion {
+        padding: 1rem;
+        background-image: none;
+
+        .caos {
+            visibility: visible;
+            font-size: 38px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .primer-curso {
+            font-size: 26px;
+            text-align: center;
+            padding: 10px;
+        }
+        .solo {
+            padding: 5px;
+            margin: 0;
+        }
+
+        .quiero-empren {
+            font-size: 14px;
+            margin: 0 auto;
+            margin-top: 20px;
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    .frase {
+        padding: 2rem;
+
+        .tu-hora {
+            font-size: 28px;
+        }
+    }
+}
+
+// Media queries para pantallas medianas
+@media (min-width: 768px) and (max-width: 1024px) {
+    .curso-presentacion {
+        padding: 1.5rem;
+
+        .caos {
+            font-size: 32px;
+            padding-top: 80px;
+        }
+
+        .primer-curso {
+            font-size: 20px;
+        }
+
+        .quiero-empren {
+            font-size: 15px;
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    .frase {
+        padding: 1.5rem;
+
+        .tu-hora {
+            font-size: 32px;
+        }
+    }
+}
 
 /*! --- LA PROFE ----*/
 
@@ -80,7 +151,7 @@
         flex-direction: column;
         align-items: center;
 
-        div{
+        div {
             flex-direction: column;
             text-align: center;
         }
@@ -100,15 +171,15 @@
 
 
 
-    /*! --- CONTACTO ----*/
-    @media (min-width: 768px) {
-        .contacto-items {
-            flex-direction: row;
-            gap: 3rem;
-            text-align: left;
-        }
-
-        form {
-            width: 80%;
-        }
+/*! --- CONTACTO ----*/
+@media (min-width: 768px) {
+    .contacto-items {
+        flex-direction: row;
+        gap: 3rem;
+        text-align: left;
     }
+
+    form {
+        width: 80%;
+    }
+}

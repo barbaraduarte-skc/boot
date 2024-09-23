@@ -1,3 +1,13 @@
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0; // Comienza invisible
+    }
+
+    100% {
+        opacity: 1; // Termina completamente visible
+    }
+}
+
 .curso-presentacion {
     display: flex;
     flex-direction: column;
@@ -9,10 +19,15 @@
     background-size: cover;
     background-position: bottom center;
     border-bottom: 4px solid $color-primary;
+
+    opacity: 0; // Inicia invisible
+    animation: fadeInBackground 1s ease-in-out forwards; // Aplica la animación
 }
 
+
+
 .caos {
-    
+
     font-weight: 800;
     font-size: 40px;
     color: $color-secondary;
