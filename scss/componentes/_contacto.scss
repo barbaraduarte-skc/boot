@@ -6,60 +6,80 @@
         justify-content: space-between;
         text-align: center;
         background-color: $color-tertiary;
-            div{
-                
-                h1{
+
+        div {
+
+            h1 {
                 margin-bottom: 1rem;
                 font-size: 1.8rem;
                 font-weight: bold;
                 color: $color-primary;
-                }
-                p{
+            }
+
+            p {
                 margin-bottom: 1.5rem;
                 font-size: 1.1rem;
-                }
-                button{
-                margin-bottom: 2rem;
-                }
             }
-            div{
-                h2{
+
+            button {
+                margin-bottom: 2rem;
+            }
+        }
+
+        div {
+            h2 {
                 margin-bottom: 1rem;
                 font-size: 1.8rem;
                 font-weight: bold;
                 color: $color-primary;
-                }
-                form{
+            }
+
+            form {
                 width: 100%;
                 max-width: 500px;
                 margin: 0 auto;
-                    div{
+
+                div {
                     margin-bottom: 1.5rem;
-                        label{
+
+                    label {
                         display: block;
                         margin-bottom: 0.5rem;
-                        }
-                        input{
+                    }
+
+                    input {
                         width: 100%;
                         padding: 0.75rem;
-                        border: 1px solid $color-tertiary;
+                        border: 1px solid $color-primary; // Borde visible
                         border-radius: 5px;
-                        }
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra ligera
+
+                        &:focus {
+                            border-color: darken($color-secondary, 10%); // Borde más oscuro al hacer foco
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra más pronunciada
                         }
                     }
-                    .form-floating{
-                        textarea{
-                        height: 100px; // Ajuste de altura aquí para mayor consistencia
-                        width: 100%;
-                        padding: 0.75rem;
-                        border: 1px solid $color-tertiary;
-                        border-radius: 5px;
-                        
-                        }
+                }
+            }
+
+            .form-floating {
+                textarea {
+                    height: 100px; // Ajuste de altura aquí para mayor consistencia
+                    width: 100%;
+                    padding: 0.75rem;
+                    border: 1px solid $color-primary;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra ligera
+
+                    &:focus {
+                        border-color: darken($color-secondary, 10%); // Borde más oscuro al hacer foco
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra más pronunciada
                     }
-                    .form-group{
-                        div{
-                            button{
+                }
+            }
+                .form-group {
+                    div {
+                        button {
                             width: 100%;
                             padding: 0.75rem;
                             background-color: #1ba7a6 !important;
@@ -68,10 +88,9 @@
                             border-radius: 5px;
                             cursor: pointer;
                             font-size: 1.1rem;
-                            --bs-btn-border-color:none !important
-                            }
+                            --bs-btn-border-color: none !important
                         }
                     }
-                    }
+                }
+            }
         }
-

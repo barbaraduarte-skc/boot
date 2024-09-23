@@ -218,15 +218,25 @@ header .navbar-toggler {
 .contacto-items div form div input {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #0e1429;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contacto-items div form div input:focus {
+  border-color: #147b7a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .contacto-items div .form-floating textarea {
   height: 100px;
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #0e1429;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contacto-items div .form-floating textarea:focus {
+  border-color: #147b7a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .contacto-items div .form-group div button {
   width: 100%;
@@ -237,7 +247,7 @@ header .navbar-toggler {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.1rem;
-  --bs-btn-border-color:none !important ;
+  --bs-btn-border-color: none !important ;
 }
 
 @keyframes fadeInBackground {
@@ -375,21 +385,20 @@ header .navbar-toggler {
 .laprofe {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: right;
   margin-top: 40px;
   border-bottom: 4px solid #0e1429;
-}
-
-.foto-barb {
-  height: 100%;
-  max-width: 400px;
-  margin-left: 40px;
+  background-image: url(../img/profe-con-laptop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
 }
 
 .presentacion {
   margin: 15px;
-  padding-right: 100px;
-  max-width: 800px;
+  padding-right: 80px;
+  max-width: 900px;
 }
 
 .hola-bienve {
@@ -407,6 +416,10 @@ header .navbar-toggler {
   background-color: #0e1429;
   border-radius: 10px;
   padding: 25px;
+}
+
+.foto-laptop {
+  visibility: none;
 }
 
 .title-trayectoria {
@@ -617,6 +630,38 @@ footer div i {
   }
 }
 /*! --- LA PROFE ----*/
+@media (max-width: 768px) {
+  .laprofe {
+    background-image: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .explicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .explicacion {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /*! --- GRATIS ----*/
 @media (max-width: 768px) {
   .escucha {
@@ -627,7 +672,8 @@ footer div i {
   }
   .yt {
     position: relative;
-    padding-bottom: 56.25%; /* Proporción de 16:9 (altura / ancho * 100) */
+    padding-bottom: 56.25%;
+    /* Proporción de 16:9 (altura / ancho * 100) */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -639,6 +685,12 @@ footer div i {
     width: 100%;
     height: 100%;
     border: 0;
+  }
+}
+/*! --- CONTACTO ----*/
+@media (max-width: 768px) {
+  .contacto-items {
+    flex-direction: column;
   }
 }
 /*! --- FOOTER ----*/
