@@ -692,6 +692,27 @@ footer div i {
 @media (max-width: 768px) {
   .contacto-items {
     flex-direction: column;
+    padding: 2rem;
+    max-width: 100%;
+  }
+  .contacto-items div h1,
+  .contacto-items div p,
+  .contacto-items div h2 {
+    font-size: 1rem;
+  }
+  .contacto-items div form {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  .contacto-items div form input,
+  .contacto-items div form textarea {
+    padding: 0.5rem;
+  }
+  .contacto-items div form .form-group button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
   }
 }
 /*! --- FOOTER ----*/

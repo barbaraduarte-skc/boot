@@ -207,12 +207,43 @@
         }
     }
 }
-/*! --- CONTACTO ----*/
-@media (max-width: 768px){
-.contacto-items{
-    flex-direction: column;
 
-}
+/*! --- CONTACTO ----*/
+@media (max-width: 768px) {
+    .contacto-items {
+        flex-direction: column; // Cambia la dirección de los elementos a columna en pantallas pequeñas
+        padding: 2rem;
+        max-width: 100%;
+        
+        div {
+            
+            h1,
+            p,
+            h2{
+                font-size: 1rem;
+            }
+
+            form {
+                max-width: 100%; // Ajusta el ancho del formulario para pantallas pequeñas
+                padding: 0.5rem; // Reduce el padding
+
+                input,
+                textarea {
+                    padding: 0.5rem; // Reduce el padding dentro de los inputs y textarea
+              
+                }
+
+                .form-group {
+                    button {
+                        width: 100%; // Asegura que el botón ocupe todo el ancho disponible
+                        padding: 0.5rem; // Ajusta el tamaño del botón
+                        font-size: 1rem; // Ajusta el tamaño del texto del botón
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*! --- FOOTER ----*/
