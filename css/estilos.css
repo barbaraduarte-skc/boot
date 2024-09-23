@@ -15,7 +15,7 @@ header nav div a img {
   width: 64px;
 }
 header nav div span {
-  color: #0e1429;
+  color: #ffffff;
 }
 header .menu-color {
   background-color: #0e1429;
@@ -122,6 +122,15 @@ header .navbar-toggler {
   /* Organiza los elementos en el eje que estamos trabajando */
   justify-content: center;
   min-height: 400px;
+}
+.index-main .valores .col-lg-4,
+.index-main .valores .col-md-6,
+.index-main .valores .col-sm-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 .index-main .valores h2 {
   text-align: center;
@@ -475,6 +484,7 @@ footer div i {
   margin-inline: 40px;
 }
 
+/*! --- INDEX ----*/
 @media (min-width: 768px) {
   .hero {
     padding-left: 40px;
@@ -487,20 +497,78 @@ footer div i {
     display: none;
   }
 }
-/*! --- EL CUROS ----*/
-/*! --- FOOTER ----*/
 @media (max-width: 991.98px) {
-  footer ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  .valores p {
+    max-width: 450px;
   }
 }
-.decorative-line {
-  width: 100px;
-  /* Reducir el ancho de la línea en dispositivos pequeños */
+@media (max-width: 1200px) {
+  .metodologia {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 768px) {
+  .metodologia {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 576px) {
+  .metodologia {
+    padding: 30px 0;
+  }
 }
 
+@media (max-width: 1200px) {
+  .suscripcion {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .suscripcion {
+    padding: 40px 30px;
+  }
+  .suscripcion .susc-elementos {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .suscripcion {
+    padding: 30px 30px;
+  }
+  .suscripcion .susc-elementos {
+    flex-direction: column;
+  }
+  .suscripcion h2 {
+    font-size: 1.8rem;
+  }
+  .suscripcion h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/*! --- EL CURSO ----*/
+/*! --- LA PROFE ----*/
+/*! --- GRATIS ----*/
+/*! --- FOOTER ----*/
+@media (max-width: 991.98px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-container div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .flex-container ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .decorative-line {
+    width: 100px;
+    /* Reducir el ancho de la línea en dispositivos pequeños */
+  }
+}
 /*! --- CONTACTO ----*/
 @media (min-width: 768px) {
   .contacto-items {

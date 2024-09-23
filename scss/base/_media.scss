@@ -1,3 +1,4 @@
+/*! --- INDEX ----*/
 @media (min-width: 768px) {
     .hero {
         padding-left: 40px;
@@ -13,37 +14,101 @@
     }
 }
 
-/*! --- EL CUROS ----*/
+@media (max-width: 991.98px) {
+    .valores {
+        p {
+            max-width: 450px;
+        }
+    }
+}
 
+.metodologia {
+    @media (max-width: 1200px) {
+        padding: 50px 0; // Ajusta el padding para pantallas medianas
+    }
+
+    @media (max-width: 768px) {
+        padding: 40px 0; // Ajusta el padding para tablets o pantallas medianas-pequeñas
+    }
+
+    @media (max-width: 576px) {
+        padding: 30px 0; // Ajusta el padding para dispositivos móviles
+    }
+}
+
+.suscripcion {
+    @media (max-width: 1200px) {
+        padding: 40px 30px; // Ajuste de padding para pantallas medianas
+    }
+
+    @media (max-width: 768px) {
+        padding: 40px 30px; // Ajuste de padding para pantallas medianas
+
+        .susc-elementos {
+            flex-direction: column; // Cambia a columna en pantallas medianas
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding: 30px 30px; // Ajuste de padding para pantallas pequeñas
+
+        .susc-elementos {
+            flex-direction: column; // Mantiene el diseño en columna
+        }
+
+        h2 {
+            font-size: 1.8rem; // Ajuste del tamaño del texto en dispositivos móviles
+        }
+
+        h3 {
+            font-size: 1.1rem; // Ajuste del tamaño del texto en dispositivos móviles
+        }
+    }
+}
+
+
+/*! --- EL CURSO ----*/
+
+/*! --- LA PROFE ----*/
+
+/*! --- GRATIS ----*/
 
 
 /*! --- FOOTER ----*/
 @media (max-width: 991.98px) {
-    footer ul {
+    .flex-container {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+
+        div{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        ul {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+    }
+
+    .decorative-line {
+        width: 100px;
+        /* Reducir el ancho de la línea en dispositivos pequeños */
     }
 }
 
-.decorative-line {
-    width: 100px;
-    /* Reducir el ancho de la línea en dispositivos pequeños */
-}
 
 
+    /*! --- CONTACTO ----*/
+    @media (min-width: 768px) {
+        .contacto-items {
+            flex-direction: row;
+            gap: 3rem;
+            text-align: left;
+        }
 
-
-
-/*! --- CONTACTO ----*/
-@media (min-width: 768px) {
-    .contacto-items {
-        flex-direction: row;
-        gap: 3rem;
-        text-align: left;
+        form {
+            width: 80%;
+        }
     }
-
-    form {
-        width: 80%;
-    }
-}
