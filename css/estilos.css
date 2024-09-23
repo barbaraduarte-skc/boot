@@ -618,6 +618,29 @@ footer div i {
 }
 /*! --- LA PROFE ----*/
 /*! --- GRATIS ----*/
+@media (max-width: 768px) {
+  .escucha {
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 40px;
+    gap: 20px;
+  }
+  .yt {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción de 16:9 (altura / ancho * 100) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .yt iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
 /*! --- FOOTER ----*/
 @media (max-width: 991.98px) {
   .flex-container {
