@@ -75,7 +75,7 @@
                     <p>Comunidad dinámica y cool de intercambio de ideas y herramientas que mejoren la vida y
                         productividad
                         de nuestros alumnos.</p>
-                    <a class="boton-serparte" href="">Quiero ser parte</a>
+                    <a class="boton-serparte" href="#formulario-index">Quiero ser parte</a>
                     <p class="recursos animate__animated animate__backInLeft animate__delay-1s">Recursos gratuitos en la
                         comunidad :)</p>
                 </div>
@@ -126,36 +126,38 @@
                 </div>
             </div>
         </section>
-        <section data-aos="fade-up" class="suscripcion">
+        <section id="formulario-index" data-aos="fade-up" class="suscripcion">
             <div class="susc-elementos row">
                 <div class="col-lg-6 col-md-6 col-sm-12 quiero">
                     <h2>¡Quiero ser parte de la comunidad!</h2>
                     <h3>Estar al día con todos los recursos y novedades de planificación y gestión personal</h3>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <form>
+                    <form action="https://submit-form.com/FksXC0VeL" method="POST">
                         <div class="form-group">
                             <label for="formGroupExampleInput">Nombre y Apellido</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
-                                placeholder="Cómo te llamás :)">
+                            <input type="text" class="form-control" id="formGroupExampleInput" name="nombre"
+                                placeholder="Cómo te llamás :)" required>
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput2">Correo electrónico</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="e-mail">
+                            <input type="email" class="form-control" id="formGroupExampleInput2" name="email"
+                                placeholder="e-mail" required>
                         </div>
-                        <select class="custom-select">
-                            <option selected="">¿Cómo nos conociste?</option>
-                            <option value="1">Tiktok</option>
-                            <option value="2">YouTube</option>
-                            <option value="3">Caburei Podcast</option>
-                            <option value="4">Recomendación</option>
-                            <option value="5">Buscador (Ej: Google)</option>
-                        </select>
-                        <button type="button" class="btn btn-secondary">Enviar</button>
+                        <div class="form-group">
+                            <label for="customSelect">¿Cómo nos conociste?</label>
+                            <select class="custom-select" name="conociste">
+                                <option value="Tiktok">Tiktok</option>
+                                <option value="YouTube">YouTube</option>
+                                <option value="Caburei Podcast">Caburei Podcast</option>
+                                <option value="Recomendación">Recomendación</option>
+                                <option value="Buscador (Google)">Buscador (Google)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
                     </form>
                 </div>
             </div>
-
         </section>
     </main>
     <footer class="flex-container">
