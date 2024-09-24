@@ -1,45 +1,68 @@
-footer{
-background-color: #0e1429;
-width: 100%;
-padding: 20px 0;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-flex-wrap: wrap;
-gap: 20px;
-    div{
-        ul{
-        display: flex;
-        list-style: none;
-        padding: 0; 
-        margin: 0;
-            li{
-                a{
-                margin-inline: 20px;
-                text-decoration: none;
-                color: #ffffff;
-                font-size: 14px;
+footer {
+    background-color: #0e1429;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    div {
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            li {
+                a {
+                    margin-inline: 20px;
+                    text-decoration: none;
+                    color: $color-tertiary;
+                    font-size: 14px;
+
+                    &:hover {
+                        color: $color-secondary !important;
+                    }
                 }
             }
-            li{
-                img{
-                height: 30px;
+
+                li {
+                    img {
+                        height: 30px;
+                        text-decoration: none;
+                    }
                 }
             }
+
+
+        .decorative-line {
+            width: 400px;
+            height: 1px;
+            /* Altura de la línea */
+            background-color: $color-tertiary;
+            /* Color de la línea */
+            margin: 10px 0;
+            /* Espaciado opcional */
+        }
+
+        div {
+            a {
+                text-decoration-line: none;
+
+            }
+
+            i {
+                font-size: 25px;
+                margin-inline: 40px;
+                color: $color-tertiary;
+
+                &:hover {
+                    color: $color-secondary !important;
+                }
             }
         }
-    .decorative-line{
-    width: 400px;
-    height: 1px; /* Altura de la línea */
-    background-color: #ffffff; /* Color de la línea */
-    margin: 10px 0; /* Espaciado opcional */
     }
-    div{
-        i{
-        font-size: 25px;
-        color: #ffffff;
-        margin-inline: 40px;
-        }
-    }
-}
